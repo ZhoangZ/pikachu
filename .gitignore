@@ -1,3 +1,2 @@
 /bin/*
 !bin/*.dll
-bin/api-ms-win-core-console-l1-1-0.dll
