@@ -6,7 +6,7 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerMain">
    <top>
-      <Label contentDisplay="CENTER" prefHeight="130.0" prefWidth="483.0" text="         CỜ CARO" textAlignment="CENTER" textFill="#bf1515" BorderPane.alignment="CENTER">
+      <Label contentDisplay="CENTER" prefHeight="130.0" prefWidth="483.0" text="         Pikachu" textAlignment="CENTER" textFill="#bf1515" BorderPane.alignment="CENTER">
          <font>
             <Font name="System Bold" size="50.0" />
          </font>

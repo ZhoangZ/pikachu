@@ -99,7 +99,10 @@ public class Node {
 //		System.out.println(nextStep);
 //		System.out.println(String.format("%d-%d", child.currentLocation[0], child.currentLocation[1]));
 //		
-		if(child.getValueCurrent()!=contentNode.goal) {
+		if(child.getValueCurrent()!=contentNode.goal
+				||child.getCurrentLocation()[0]!=contentNode.locationGoal[0]
+						||child.getCurrentLocation()[1]!=contentNode.locationGoal[1]
+				) {
 			
 			return child.walking(contentNode);
 			
@@ -144,6 +147,15 @@ public class Node {
 	public void setLstChild(List<Node> lstChild) {
 		this.lstChild = lstChild;
 	}
+
+	public int[] getCurrentLocation() {
+		return currentLocation;
+	}
+
+	public void setCurrentLocation(int[] currentLocation) {
+		this.currentLocation = currentLocation;
+	}
+	
 	
 
 }

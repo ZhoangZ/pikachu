@@ -1,7 +1,7 @@
 package model;
 
 public class Board {
-	private byte[][] matrix;
+	private int[][] matrix;
 	
 	public Board() {
 		super();
@@ -10,16 +10,21 @@ public class Board {
 
 	public Board(int cols, int rows) {
 		super();
-		this.matrix = new byte[rows][cols];
+		this.matrix = new int[rows][cols];
 	}
 
 
-	public byte[][] getMatrix() {
+	public int[][] getMatrix() {
 		return matrix;
 	}
 
-	public void setMatrix(byte[][] matrix) {
+	public void setMatrix(int[][] matrix) {
 		this.matrix = matrix;
+	}
+	public void setValue(int [] location, int value) {
+		
+		this.matrix[location[0]][location[1]]=value;
+		//System.out.println(this.toString());
 	}
 	@Override
 	public String toString() {

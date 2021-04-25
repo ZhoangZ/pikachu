@@ -51,5 +51,17 @@ public class ContentNode {
 		Collections.reverse(rs);
 		return rs;
 	}
+	public List<Node> track(){
+		ArrayList rs = new ArrayList<>();
+		if(nodeGoal!=null) {
+			Node tmp = nodeGoal;
+			while(tmp!=null) {
+				rs.add(tmp);
+				tmp=tmp.getParent();
+			}
+		}
+		Collections.reverse(rs);
+		return rs;
+	}
 
 }
