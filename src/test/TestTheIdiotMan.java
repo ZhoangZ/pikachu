@@ -7,10 +7,10 @@ import java.util.List;
 
 import org.junit.Test;
 
-import model.Board;
-import model.ContentNode;
-import model.Node;
-import model.Step;
+import idiot.Board;
+import idiot.ContentNode;
+import idiot.Node;
+import idiot.Step;
 
 public class TestTheIdiotMan {
 	@Test

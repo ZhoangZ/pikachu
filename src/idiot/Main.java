@@ -1,11 +1,8 @@
-package main;
+package idiot;
 
 import java.util.List;
 
-import model.Board;
-import model.ContentNode;
-import model.Node;
-import model.Step;
+
 
 public class Main {
 	public static void main(String[] args) {

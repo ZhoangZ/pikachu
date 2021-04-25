@@ -1,4 +1,4 @@
-package model;
+package idiot;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -7,12 +7,10 @@ import java.util.List;
 public class ContentNode {
 	public int turnNum;
 	public int goal;
-	public int[] locationGoal;
 	private Node nodeGoal;
-	public ContentNode(int goal, int[] location) {
+	public ContentNode(int goal) {
 		super();
 		this.goal=goal;
-		this.locationGoal=location;
 	}
 
 	public int getTurnNum() {
