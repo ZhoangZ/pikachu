@@ -76,7 +76,12 @@ public class Node {
 		}else {
 			//Kiểm tra có chướng ngại vật hay không
 			//Check for obstacles or not
-			if(child.getValueCurrent()!=contentNode.goal&&child.getValueCurrent()!=0) {
+			if((child.getValueCurrent()!=contentNode.goal
+					||!(child.getCurrentLocation()[1]==contentNode.locationGoal[1]
+					&&child.getCurrentLocation()[0]==contentNode.locationGoal[0])
+					)
+					&&child.getValueCurrent()!=0
+							) {
 				return this.walking(contentNode);
 			}
 		}
